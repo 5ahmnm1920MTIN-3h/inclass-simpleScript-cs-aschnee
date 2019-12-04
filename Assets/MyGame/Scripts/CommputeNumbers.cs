@@ -23,15 +23,18 @@ public class CommputeNumbers : MonoBehaviour
         Debug.Log("in Start: " + SubstractNumbers(4, 7));
         Debug.Log(10 - SubstractNumbers(varA, varB));
         Debug.Log(100 - SubstractNumbers(4, 7));
-        SetResult();
+        
     }
 
     public void SetResult()
     {
         float a = float.Parse(ipVarA.text);
-        float b = float.Parse(ipVarA.text);
+        float b = float.Parse(ipVarB.text);
         Debug.Log("in SetResult" + (a - b));
         //result.text = SubstractNumbers(a, b);
+        float resultAB = a - b;
+        result.text = resultAB.ToString();
+
     }
 
     public string TestMethode()
