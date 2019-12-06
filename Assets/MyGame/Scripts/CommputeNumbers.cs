@@ -17,12 +17,12 @@ public class CommputeNumbers : MonoBehaviour
     {
         varA = 5;
         varB = 4;
-        SubstractNumbers(varA, varB);
-        SubstractNumbers(4, 7);
-        Debug.Log("in Start: " + SubstractNumbers(varA, varB));
-        Debug.Log("in Start: " + SubstractNumbers(4, 7));
-        Debug.Log(10 - SubstractNumbers(varA, varB));
-        Debug.Log(100 - SubstractNumbers(4, 7));
+        AddNumbers(varA, varB);
+        AddNumbers(4, 7);
+        Debug.Log("in Start: " + AddNumbers(varA, varB));
+        Debug.Log("in Start: " + AddNumbers(4, 7));
+        Debug.Log(10 - AddNumbers(varA, varB));
+        Debug.Log(100 - AddNumbers(4, 7));
         
     }
 
@@ -30,31 +30,16 @@ public class CommputeNumbers : MonoBehaviour
     {
         float a = float.Parse(ipVarA.text);
         float b = float.Parse(ipVarB.text);
-        Debug.Log("in SetResult" + (a - b));
+        Debug.Log("in SetResult" + (a + b));
         //result.text = SubstractNumbers(a, b);
-        float resultAB = a - b;
+        float resultAB = a + b;
         result.text = resultAB.ToString();
 
     }
 
-    public string TestMethode()
+    public float AddNumbers(float variableA, float variableB)
     {
-        Debug.Log("Test");
-        return "Test";
-    }
-    public void TestMethodeVOID()
-    {
-        Debug.Log("Test");
-    }
-    public float MultNumbers(float variableA, float variableB)
-    {
-        float result = variableA * variableB;
-        //Debug.Log("Test sub" + result.ToString());
-        return result;
-    }
-    public float SubstractNumbers(float variableA, float variableB)
-    {
-        float result = variableA - variableB;
+        float result = variableA + variableB;
         //Debug.Log("Test sub" + result.ToString());
         return result;
     }
