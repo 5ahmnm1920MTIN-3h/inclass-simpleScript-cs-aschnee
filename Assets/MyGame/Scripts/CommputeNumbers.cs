@@ -15,8 +15,8 @@ public class CommputeNumbers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SubstractNumbers(varA, varB);
-        SubstractNumbers(4, 7);
+        SubNumbers(varA, varB);
+        SubNumbers(4, 7);
         InitVariables();
     }
     public void InitVariables()
@@ -35,22 +35,7 @@ public class CommputeNumbers : MonoBehaviour
 
     }
 
-    public string TestMethode()
-    {
-        Debug.Log("Test");
-        return "Test";
-    }
-    public void TestMethodeVOID()
-    {
-        Debug.Log("Test");
-    }
-    public float MultNumbers(float variableA, float variableB)
-    {
-        float result = variableA * variableB;
-        //Debug.Log("Test sub" + result.ToString());
-        return result;
-    }
-    public float SubstractNumbers(float variableA, float variableB)
+    public float SubNumbers(float variableA, float variableB)
     {
         float result = variableA - variableB;
         //Debug.Log("Test sub" + result.ToString());
