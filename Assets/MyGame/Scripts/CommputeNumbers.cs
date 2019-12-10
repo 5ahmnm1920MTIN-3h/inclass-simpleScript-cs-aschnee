@@ -15,17 +15,15 @@ public class CommputeNumbers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        varA = 5;
-        varB = 4;
         SubstractNumbers(varA, varB);
         SubstractNumbers(4, 7);
-        Debug.Log("in Start: " + SubstractNumbers(varA, varB));
-        Debug.Log("in Start: " + SubstractNumbers(4, 7));
-        Debug.Log(10 - SubstractNumbers(varA, varB));
-        Debug.Log(100 - SubstractNumbers(4, 7));
-        
+        InitVariables();
     }
-
+    public void InitVariables()
+    {
+        varA = 5;
+        varB = 4;
+    }
     public void SetResult()
     {
         float a = float.Parse(ipVarA.text);
