@@ -21,8 +21,8 @@ public class CommputeNumbers : MonoBehaviour
     }
     public void InitVariables()
     {
-        varA = 5;
-        varB = 4;
+        varA = 0;
+        varB = 0;
     }
     public void SetResult()
     {
